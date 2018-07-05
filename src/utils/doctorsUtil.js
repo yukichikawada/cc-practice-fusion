@@ -6,3 +6,10 @@ export const fetchDoctors = () => (
     method: 'GET'
   })
 );
+
+export const fetchDoctor = doctorId => (
+  $.ajax({
+    url: `http://localhost:3004/doctors/${doctorId}`,
+    method: 'GET'
+  })
+);
