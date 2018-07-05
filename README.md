@@ -28,10 +28,14 @@ want to improve on.
 >
 > I would've liked to add css to make things look better but I prioritized 
 > functionality above form.
+>
+> Searched for an easier backend solution re:deployment.
 
 ## How to: Set up locally
 * ```npm i``` install node_modules
 * ```npm i -g json-server```
+* ```npm json-server --watch db.json``` start api endpoint
+* ```npm start``` start Similar Doctors app
 * navigate to [http://localhost:3000](http://localhost:3000)
 
 json-server.json is config file for server and is set to run on port 3004
