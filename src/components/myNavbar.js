@@ -6,7 +6,7 @@ class MyNavbar extends React.Component {
   render() {
     return(
       <nav className="navbar">
-        <h1><a href="#">Similar Doctors</a></h1>
+        <h1><a className="brand-link" href="#">Similar Doctors</a></h1>
         <ul>
           <li>
             <Link to={`/category`} >Category</Link>

@@ -26,7 +26,9 @@ class DoctorCategoryResults extends React.Component {
     const docs = this.state.doctors.map(doc => {
       return (
         <li key={doc.id}>
-          Dr. {doc.first_name} {doc.last_name} of {doc.area} in {doc.specialty} - scored: {doc.score}
+          <Link to={`/doctors/${doc.id}`}>
+            Dr. {doc.first_name} {doc.last_name} of {doc.area} in {doc.specialty} - scored: {doc.score}
+          </Link>
         </li>
       );
     });
