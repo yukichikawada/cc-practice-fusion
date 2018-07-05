@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class DoctorsIndex extends React.Component {
   componentDidMount() {
@@ -9,7 +10,9 @@ class DoctorsIndex extends React.Component {
     const doctors = this.props.doctors.map((doc, idx) => {
       return (
         <li key={idx}>
-          Dr. {doc.first_name} {doc.last_name} Specialty: {doc.specialty}, Area: {doc.area}, Score: {doc.score}
+          <Link to={`/doctors/${doc.id}`} >
+            Dr. {doc.first_name} {doc.last_name} Specialty: {doc.specialty}, Area: {doc.area}, Score: {doc.score}
+          </Link>
         </li>
       );
     });
